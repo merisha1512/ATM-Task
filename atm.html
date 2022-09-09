@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATM</title>
+    </head>
+    <body>
+        <script>
+            var num=parseInt(prompt("Enter the amount:"));
+var atm=0;
+while(num!=0){
+    if(num>=2000){
+        atm=Math.floor(num/2000);
+        document.write("2000 Rs.note "+atm+ "<br>");
+        num=num%2000;
+    }
+    else if(num>=500){
+        atm=Math.floor(num/500);
+        document.write("500 Rs.note "+atm+ "<br>");
+        num=num%500;
+    }
+    else if(num>=200){
+        atm=Math.floor(num/200);
+        document.write("200 Rs.note "+atm+ "<br>");
+        num=num%200;
+    }
+    else if(num>=100){
+        atm=Math.floor(num/100);
+        document.write("100 Rs.note "+atm+ "<br>");
+        num=num%100;
+    }
+    else if(num>=50){
+        atm=Math.floor(num/50);
+        document.write("50 Rs.note "+atm+ "<br>");
+        num=num%50;
+    }
+    else if(num>=20){
+        atm=Math.floor(num/20);
+        document.write("20 Rs.note "+atm+ "<br>");
+        num=num%20;
+    }
+    else if(num>=10){
+        atm=Math.floor(num/10);
+        document.write("10 Rs.note "+atm+ "<br>");
+        num=num%10;
+    }
+    else if(num>=5){
+        atm=Math.floor(num/5);
+        document.write("5 Rs.coin "+atm+ "<br>");
+        num=num%5;
+    }
+    else if(num>=2){
+        atm=Math.floor(num/2);
+        document.write("2 Rs.coin "+atm+ "<br>");
+        num=num%2;
+    }
+    else{
+        atm=num/num;
+        document.write("1 Rs.coin "+atm+ "<br");
+        num=num*0
+       
+    }
+      
+}
+
+        </script>
+    </body>
+</html>
